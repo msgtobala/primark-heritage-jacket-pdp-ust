@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Import image
-import bannerImage from '../assets/images/banner/image-3.png';
+import bannerImage from '../assets/images/banner/family-1.png';
 
 const DesignBanner: React.FC = () => {
   return (
@@ -14,7 +14,7 @@ const DesignBanner: React.FC = () => {
         {/* Left Side - Solid Background with Text Content */}
         <div
           className="w-1/2 flex items-center justify-start pl-8 sm:pl-12 md:pl-16 lg:pl-20 xl:pl-24"
-          style={{ backgroundColor: '#2F3134', flex: '3' }}
+          style={{ backgroundColor: '#68452D', flex: '3' }}
         >
           <div className="max-w-md">
             {/* Tag */}
@@ -31,20 +31,19 @@ const DesignBanner: React.FC = () => {
                   paddingLeft: '16px',
                 }}
               >
-                Crafted for Effortless Elegance
+                Everyday Comfort
               </span>
             </div>
 
             {/* Main Title */}
-            <h2 className="text-white font-medium text-2xl sm:text-3xl md:text-4xl lg:text-3xl xl:text-3xl mb-6 leading-tight">
-              Timeless Form. Confident Function.
+            <h2 className="text-white font-regular text-2xl sm:text-3xl md:text-4xl lg:text-3xl xl:text-3xl mb-6 leading-tight">
+              Ready for Every Journey
             </h2>
 
             {/* Description */}
             <p className="text-white/70 text-sm sm:text-base md:text-lg leading-relaxed">
-              A carry-on that complements every journey, blending precision
-              design, elevated styling, and the signature versatility TUMI is
-              known for.
+              From carrying books in the classroom to toys at the playground,
+              it’s crafted for durability and comfort all day long
             </p>
           </div>
         </div>

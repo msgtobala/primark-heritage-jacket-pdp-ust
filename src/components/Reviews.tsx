@@ -23,7 +23,7 @@ const Reviews: React.FC = () => {
       timeAgo: '2 WEEKS AGO',
       rating: 4,
       comment:
-        'Worth the splurge—easy to handle at 75 and surprisingly spacious. Love it!',
+        'Perfect birthday present for my nephew. He is using it every day as his school bag.',
       images: [review1],
     },
     {
@@ -31,8 +31,7 @@ const Reviews: React.FC = () => {
       name: 'MichaelR',
       timeAgo: '2 WEEKS AGO',
       rating: 4,
-      comment:
-        'Love it! Rolls through airports well and easily fits on the CRJ900s!',
+      comment: 'Perfect everyday wear for kids. Durable, stylish, and easy to wash. Highly recommend for parents looking for affordable quality.',
       images: [review2],
     },
     {
@@ -41,7 +40,7 @@ const Reviews: React.FC = () => {
       timeAgo: '2 WEEKS AGO',
       rating: 4,
       comment:
-        'Replaced my old Tumi with this compact roller. Surprisingly spacious—fit everything for a 2-night trip using the expansion. Two-compartment layout is smart, TSA lock works well. Recommend getting Tumi hangers and shirt pack.',
+        'Lovely quality fabric, feels soft and comfortable. My son absolutely loves the dinosaur print. Washes well and keeps its shape. Very happy with this purchase!',
       images: [review3, review4],
     },
     {
@@ -50,7 +49,7 @@ const Reviews: React.FC = () => {
       timeAgo: '4 WEEKS AGO',
       rating: 4,
       comment:
-        'A+++++ highly recommend. I recently went on a five day trip and fit everything in here. I love the bag.',
+        'Bought this for my nephew’s birthday and he was thrilled! Bright colours and fun design, he wears it all the time.',
       images: [],
     },
   ];
@@ -233,7 +232,7 @@ const Reviews: React.FC = () => {
                     <div className="flex items-start justify-between gap-6">
                       {/* Review Text */}
                       <div className="flex-1">
-                        <p className="text-[#5C5F6A] text-sm leading-relaxed">
+                        <p className="text-[#5C5F6A] text-sm leading-relaxed max-w-[85%]">
                           {review.comment}
                         </p>
                       </div>

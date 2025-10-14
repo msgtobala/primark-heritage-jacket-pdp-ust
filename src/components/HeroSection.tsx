@@ -4,13 +4,14 @@ import React, { useState } from 'react';
 import heroNew1 from '../assets/images/hero/hero-new-1.png';
 import heroNew2 from '../assets/images/hero/hero-new-2.png';
 import heroNew3 from '../assets/images/hero/hero-new-3.png';
-import heroNew4 from '../assets/images/hero/new-hero-4.mp4';
-import heroNew6 from '../assets/images/hero/new-hero-6.mp4';
+import heroNew4Img from '../assets/images/hero/hero-new-4.png';
+import heroNew5 from '../assets/images/hero/hero-new-5.mp4';
+import heroNew6 from '../assets/images/hero/hero-new-6.mp4';
 import tumi1 from '../assets/images/hero/you-may-also-like/tumi-1.png';
 import tumi2 from '../assets/images/hero/you-may-also-like/tumi-2.png';
 import tumi3 from '../assets/images/hero/you-may-also-like/tumi-3.png';
-import Black from '../assets/images/hero/variants/black.png';
-import Gold from '../assets/images/hero/variants/gold.png';
+import Black from '../assets/images/hero/variants/variant-1.png';
+import Gold from '../assets/images/hero/variants/variant-2.png';
 
 interface Product {
   id: string;
@@ -20,6 +21,7 @@ interface Product {
   originalPrice?: string;
   image: string;
   isSponsored?: boolean;
+  color?: string;
 }
 
 interface MediaItem {
@@ -46,9 +48,14 @@ const HeroSection: React.FC = () => {
       alt: 'Alpha 3 Collection - View 3',
     },
     {
-      src: heroNew4,
-      type: 'video',
+      src: heroNew4Img,
+      type: 'image',
       alt: 'Alpha 3 Collection - Video demonstration',
+    },
+    {
+      src: heroNew5,
+      type: 'video',
+      alt: 'Alpha 3 Collection - View 5',
     },
     {
       src: heroNew6,
@@ -59,14 +66,14 @@ const HeroSection: React.FC = () => {
 
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
   const [quantity, setQuantity] = useState(1);
-  const [selectedColor, setSelectedColor] = useState('Black/ Gold');
+  const [selectedColor, setSelectedColor] = useState('Blue Dinosaur Print');
   // const [currentMedia, setSelectedMedia] = useState(
   //   productMedia[selectedImageIndex]
   // );
 
   const colorOptions = [
     {
-      name: 'Black',
+      name: 'Blue Dinosaur Print',
       image: Black,
     },
     {
@@ -78,27 +85,31 @@ const HeroSection: React.FC = () => {
   const youMightAlsoLikeBase: Product[] = [
     {
       id: '1',
-      name: 'TUMI',
-      brand: 'TUMI',
-      price: '$599.00 - $750.00',
-      originalPrice: '$750.00',
+      name: 'Gap Green Camo Camo Backpack',
+      brand: 'Gap Green Camo Camo Backpack',
+      price: '£30',
+      originalPrice: '£40',
       image: tumi1,
+      color: '#E8E8E8',
     },
     {
       id: '2',
-      name: 'MAISON de SABRE',
-      brand: 'MAISON de SABRE',
-      price: '$499.00',
+      name: 'Linen Blend Shirt',
+      brand: 'Linen Blend Shirt',
+      originalPrice: '£10 - £15',
+      price: '',
       image: tumi2,
       isSponsored: true,
+      color: '#F6F6F6',
     },
     {
       id: '3',
-      name: 'TUMI',
-      brand: 'TUMI',
-      price: '$619.00',
-      originalPrice: '$775.00',
+      name: 'Adidas Red Youth Prime Backpack',
+      brand: 'Adidas Red Youth Prime Backpack',
+      originalPrice: '£18',
+      price: '',
       image: tumi3,
+      color: '#EBEEF0',
     },
   ];
 
@@ -152,6 +163,7 @@ const HeroSection: React.FC = () => {
                     src={currentMedia.src}
                     alt={currentMedia.alt}
                     className="w-full h-full object-cover"
+                    // className="w-full h-full"
                   />
                 )}
               </div>
@@ -231,10 +243,10 @@ const HeroSection: React.FC = () => {
               {/* Rating and Reviews */}
               <div className="flex items-center gap-2 mb-3">
                 <div className="flex items-center">
-                  <span className="material-icons-outlined text-black text-sm">
+                  <span className="material-icons-outlined text-[#7F7F7F] text-sm">
                     star
                   </span>
-                  <span className="text-sm text-gray-600 ml-1">
+                  <span className="text-sm text-[##777777] ml-1">
                     4.2 — 54 Reviews
                   </span>
                 </div>
@@ -247,27 +259,30 @@ const HeroSection: React.FC = () => {
 
               {/* Product Title */}
               <h1 className="text-lg md:text-xl font-medium text-black mb-2 leading-tight">
-                Alpha 3 Collection 22-Inch International Expandable Wheeled
-                Carry-On Bag
+                Blue Dinosaur Print Backpack
               </h1>
 
               {/* Brand */}
-              <p className="text-gray-600 mb-3 text-sm">Tumi</p>
+              <p className="text-gray-600 mb-3 text-sm">Primark</p>
 
               {/* Price */}
               <div className="mb-4">
-                <span className="text-xl font-medium text-black">$875.00</span>
+                <span className="text-xl font-medium text-black">£20</span>
               </div>
 
               {/* Description */}
-              <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Engineered for the journey, styled for success — TUMI redefines
-                travel with durability, function, and flawless design.
+              <p className="text-[#777777] text-md leading-relaxed mb-4 font-normal">
+                A playful, eco-friendly kids’ backpack made from recycled
+                polyester, compact and perfect for daily adventures.
               </p>
 
+              <div className="my-4">
+                <hr className="border-[#E6E7E8] border-0.5" />
+              </div>
+
               {/* Color Selection */}
-              <div className="mb-4 flex justify-between">
-                <h3 className="text-sm font-medium text-black mb-2">
+              <div className="mb-4 flex justify-between items-center">
+                <h3 className="text-sm font-normal text-black mb-2">
                   {selectedColor}
                 </h3>
                 <div className="flex gap-2">
@@ -293,8 +308,12 @@ const HeroSection: React.FC = () => {
                 </div>
               </div>
 
+              <div className="mb-8">
+                <hr className="border-[#E6E7E8] border-0.5" />
+              </div>
+
               {/* Quantity and Add to Cart */}
-              <div className="flex items-center gap-3 mb-4">
+              <div className="flex items-center gap-3 mb-12">
                 <div className="flex items-center border border-gray-300 rounded">
                   <button
                     onClick={() => handleQuantityChange(-1)}
@@ -315,7 +334,7 @@ const HeroSection: React.FC = () => {
                   </button>
                 </div>
 
-                <button className="flex-1 bg-black text-white py-2 px-4 rounded hover:bg-gray-800 transition-colors font-medium text-sm">
+                <button className="flex-1 bg-[#00A0D5] text-white py-2 px-4 rounded hover:bg-gray-800 transition-colors font-medium text-sm">
                   Add to cart
                 </button>
               </div>
@@ -324,13 +343,15 @@ const HeroSection: React.FC = () => {
               <div className="space-y-2 flex-1">
                 <details className="border-b border-gray-200 pb-2">
                   <summary className="flex items-center justify-between cursor-pointer py-2">
-                    <div className="flex items-center gap-2">
-                      <span className="material-icons-outlined text-gray-600 text-base">
+                    <div className="flex items-center gap-4">
+                      <span className="material-icons-outlined text-[#777777] text-base">
                         straighten
                       </span>
-                      <span className="font-medium text-sm">SIZE INFO</span>
+                      <span className="font-medium text-sm text-[#777777]">
+                        SIZE INFO
+                      </span>
                     </div>
-                    <span className="material-icons-outlined text-gray-600">
+                    <span className="material-icons-outlined text-[#777777]">
                       add
                     </span>
                   </summary>
@@ -338,15 +359,15 @@ const HeroSection: React.FC = () => {
 
                 <details className="border-b border-gray-200 pb-2">
                   <summary className="flex items-center justify-between cursor-pointer py-2">
-                    <div className="flex items-center gap-2">
-                      <span className="material-icons-outlined text-gray-600 text-base">
+                    <div className="flex items-center gap-4">
+                      <span className="material-icons-outlined text-[#777777] text-base">
                         local_shipping
                       </span>
-                      <span className="font-medium text-sm">
+                      <span className="font-medium text-sm text-[#777777]">
                         SHIPPING & RETURNS
                       </span>
                     </div>
-                    <span className="material-icons-outlined text-gray-600">
+                    <span className="material-icons-outlined text-[#777777]">
                       add
                     </span>
                   </summary>
@@ -354,13 +375,15 @@ const HeroSection: React.FC = () => {
 
                 <details className="border-b border-gray-200 pb-2">
                   <summary className="flex items-center justify-between cursor-pointer py-2">
-                    <div className="flex items-center gap-2">
-                      <span className="material-icons-outlined text-gray-600 text-base">
+                    <div className="flex items-center gap-4">
+                      <span className="material-icons-outlined text-[#777777] text-base">
                         card_giftcard
                       </span>
-                      <span className="font-medium text-sm">GIFT OPTIONS</span>
+                      <span className="font-medium text-sm text-[#777777]">
+                        GIFT OPTIONS
+                      </span>
                     </div>
-                    <span className="material-icons-outlined text-gray-600">
+                    <span className="material-icons-outlined text-[#777777]">
                       add
                     </span>
                   </summary>
@@ -368,15 +391,15 @@ const HeroSection: React.FC = () => {
 
                 <details className="pb-2">
                   <summary className="flex items-center justify-between cursor-pointer py-2">
-                    <div className="flex items-center gap-2">
-                      <span className="material-icons-outlined text-gray-600 text-base">
+                    <div className="flex items-center gap-4">
+                      <span className="material-icons-outlined text-[#777777] text-base">
                         support_agent
                       </span>
-                      <span className="font-medium text-sm">
+                      <span className="font-medium text-sm text-[#777777]">
                         PRODUCT ADVISORY
                       </span>
                     </div>
-                    <span className="material-icons-outlined text-gray-600">
+                    <span className="material-icons-outlined text-[#777777]">
                       add
                     </span>
                   </summary>
@@ -405,7 +428,7 @@ const HeroSection: React.FC = () => {
                   >
                     {/* Image Container with Exact Dimensions: 140px width x 160px height */}
                     <div
-                      className="relative bg-gray-50 rounded-lg overflow-hidden mb-3"
+                      className={`relative bg-[${product.color}] rounded-lg overflow-hidden mb-3`}
                       style={{
                         width: '140px',
                         height: '160px',
@@ -417,24 +440,24 @@ const HeroSection: React.FC = () => {
                         className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                         style={{ padding: '0px' }}
                       />
-                      {product.isSponsored && (
-                        <span className="absolute top-2 left-2 text-xs text-gray-500 bg-white px-2 py-1 rounded">
-                          Sponsored
-                        </span>
-                      )}
                     </div>
 
                     {/* Product Info - Center aligned */}
                     <div className="text-center">
-                      <h4 className="font-medium text-sm mb-1">
+                      {product.isSponsored && (
+                        <span className="text-xs text-[#697579] rounded">
+                          Sponsored
+                        </span>
+                      )}
+                      <h4 className="font-medium text-sm mb-1 mt-1">
                         {product.brand}
                       </h4>
-                      <div className="flex items-center justify-center gap-1 flex-wrap">
+                      <div className="flex flex-col items-center justify-center gap-1 flex-wrap">
                         <span className="text-red-500 font-medium text-xs">
                           {product.price}
                         </span>
                         {product.originalPrice && (
-                          <span className="text-gray-400 line-through text-xs">
+                          <span className={`${product.price !== "" ? "text-gray-400" : "text-[#000000]"} ${product.price !== "" ? "line-through" : ""} text-xs`}>
                             {product.originalPrice}
                           </span>
                         )}

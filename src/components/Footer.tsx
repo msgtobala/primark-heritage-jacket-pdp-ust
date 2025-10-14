@@ -16,13 +16,12 @@ const Footer: React.FC = () => {
           <div className="lg:flex-shrink-0">
             {/* Logo */}
             <div className="mb-[26px]">
-              <img src={logo} alt="Nordstrom" className="w-[264px] h-[33px]" />
+              <img src={logo} alt="Primark" style={{ width: '250px' }} />
             </div>
 
             {/* Description */}
             <p className="text-[#5C5F6A] text-md leading-relaxed mb-[42px] max-w-xs">
-              Where fashion feels effortless. <br /> Where service feels
-              tailored.
+              Bringing everyday style and comfort to you, wherever you are.
             </p>
 
             {/* Social Media Icons */}
@@ -86,16 +85,16 @@ const Footer: React.FC = () => {
           <div className="flex flex-col sm:flex-row sm:gap-16 lg:gap-20 xl:gap-24 gap-8">
             {/* Support Column */}
             <div className="">
-              <h3 className="text-[#878A92] font-regular text-[14px] mb-4 uppercase tracking-wide mb-[54px]">
-                Customer Service
+              <h3 className="text-[#0E1422] font-regular text-[14px] mb-4  tracking-wide mb-[54px]">
+                Shopping With Us
               </h3>
-              <ul className="space-y-6">
+              <ul className="space-y-4">
                 <li>
                   <a
                     href="#"
                     className="text-[#5C5F6A] hover:text-[#0E1422] transition-colors text-sm"
                   >
-                    Contact Us
+                    Primarkunlimited
                   </a>
                 </li>
                 <li>
@@ -103,7 +102,7 @@ const Footer: React.FC = () => {
                     href="#"
                     className="text-[#5C5F6A] hover:text-[#0E1422] transition-colors text-sm"
                   >
-                    Order Status
+                    Primark Credit Options
                   </a>
                 </li>
                 <li>
@@ -111,23 +110,7 @@ const Footer: React.FC = () => {
                     href="#"
                     className="text-[#5C5F6A] hover:text-[#0E1422] transition-colors text-sm"
                   >
-                    Shipping
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="text-[#5C5F6A] hover:text-[#0E1422] transition-colors text-sm"
-                  >
-                    Return Policy & Exchanges
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="text-[#5C5F6A] hover:text-[#0E1422] transition-colors text-sm"
-                  >
-                    Price Adjustments
+                    eGift Cards
                   </a>
                 </li>
                 <li>
@@ -143,7 +126,31 @@ const Footer: React.FC = () => {
                     href="#"
                     className="text-[#5C5F6A] hover:text-[#0E1422] transition-colors text-sm"
                   >
-                    FAQ
+                    Gift Experiences
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="text-[#5C5F6A] hover:text-[#0E1422] transition-colors text-sm"
+                  >
+                    Flowers, Plants & Wine
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="text-[#5C5F6A] hover:text-[#0E1422] transition-colors text-sm"
+                  >
+                    Privacy & Cookie Policy
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="text-[#5C5F6A] hover:text-[#0E1422] transition-colors text-sm"
+                  >
+                    Terms & Conditions
                   </a>
                 </li>
               </ul>
@@ -151,16 +158,16 @@ const Footer: React.FC = () => {
 
             {/* Company Column */}
             <div className="">
-              <h3 className="text-[#878A92] font-regular text-[14px] mb-4 uppercase tracking-wide mb-[54px]">
-                About Us
+              <h3 className="text-[#0E1422] font-regular text-[14px] mb-4  tracking-wide mb-[54px]">
+                Help with
               </h3>
-              <ul className="space-y-6">
+              <ul className="space-y-4">
                 <li>
                   <a
                     href="#"
                     className="text-[#5C5F6A] hover:text-[#0E1422] transition-colors text-sm"
                   >
-                    All Brands
+                    Frequently Asked Questions
                   </a>
                 </li>
                 <li>
@@ -168,7 +175,7 @@ const Footer: React.FC = () => {
                     href="#"
                     className="text-[#5C5F6A] hover:text-[#0E1422] transition-colors text-sm"
                   >
-                    Careers
+                    Delivery Information
                   </a>
                 </li>
                 <li>
@@ -176,8 +183,7 @@ const Footer: React.FC = () => {
                     href="#"
                     className="text-[#5C5F6A] hover:text-[#0E1422] transition-colors text-sm"
                   >
-                    Corporate Social
-                    <br /> Responsibility
+                    Arrange A Return
                   </a>
                 </li>
                 <li>
@@ -185,8 +191,7 @@ const Footer: React.FC = () => {
                     href="#"
                     className="text-[#5C5F6A] hover:text-[#0E1422] transition-colors text-sm"
                   >
-                    Diversity, Equity,
-                    <br /> Inclusion & Belonging
+                    Product Recall
                   </a>
                 </li>
                 <li>
@@ -194,7 +199,7 @@ const Footer: React.FC = () => {
                     href="#"
                     className="text-[#5C5F6A] hover:text-[#0E1422] transition-colors text-sm"
                   >
-                    Get Email Updates
+                    Contact Us
                   </a>
                 </li>
                 <li>
@@ -202,7 +207,7 @@ const Footer: React.FC = () => {
                     href="#"
                     className="text-[#5C5F6A] hover:text-[#0E1422] transition-colors text-sm"
                   >
-                    Nordstrom Blog
+                    Accessible Site
                   </a>
                 </li>
                 <li>
@@ -210,7 +215,7 @@ const Footer: React.FC = () => {
                     href="#"
                     className="text-[#5C5F6A] hover:text-[#0E1422] transition-colors text-sm"
                   >
-                    Nordy Podcast
+                    Website Accessibility Policy
                   </a>
                 </li>
               </ul>
@@ -218,16 +223,16 @@ const Footer: React.FC = () => {
 
             {/* Shop Column */}
             <div className="">
-              <h3 className="text-[#878A92] font-regular text-[14px] mb-4 uppercase tracking-wide mb-[54px]">
-                Stores & Services
+              <h3 className="text-[#0E1422] font-regular text-[14px] mb-4  tracking-wide mb-[54px]">
+                More From Primark
               </h3>
-              <ul className="space-y-6">
+              <ul className="space-y-4">
                 <li>
                   <a
                     href="#"
                     className="text-[#5C5F6A] hover:text-[#0E1422] transition-colors text-sm"
                   >
-                    Find a Store
+                    Primark App
                   </a>
                 </li>
                 <li>
@@ -235,7 +240,7 @@ const Footer: React.FC = () => {
                     href="#"
                     className="text-[#5C5F6A] hover:text-[#0E1422] transition-colors text-sm"
                   >
-                    Free Style Help
+                    The Company
                   </a>
                 </li>
                 <li>
@@ -243,7 +248,7 @@ const Footer: React.FC = () => {
                     href="#"
                     className="text-[#5C5F6A] hover:text-[#0E1422] transition-colors text-sm"
                   >
-                    Alterations & Tailoring
+                    Media & Press
                   </a>
                 </li>
                 <li>
@@ -251,9 +256,7 @@ const Footer: React.FC = () => {
                     href="#"
                     className="text-[#5C5F6A] hover:text-[#0E1422] transition-colors text-sm"
                   >
-                    SkinSpirit Clinic Spa
-                    <br />
-                    Nordstrom
+                    Careers @ Primark
                   </a>
                 </li>
                 <li>
@@ -261,7 +264,7 @@ const Footer: React.FC = () => {
                     href="#"
                     className="text-[#5C5F6A] hover:text-[#0E1422] transition-colors text-sm"
                   >
-                    Nordstrom Restaurants
+                    View Our Modern Slavery Statement
                   </a>
                 </li>
                 <li>
@@ -269,24 +272,7 @@ const Footer: React.FC = () => {
                     href="#"
                     className="text-[#5C5F6A] hover:text-[#0E1422] transition-colors text-sm"
                   >
-                    Nordstrom Local
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            {/* Accepted Payments Column */}
-            <div className="">
-              <h3 className="text-[#878A92] font-regular text-[14px] mb-4 uppercase tracking-wide mb-[54px]">
-                Nordstrom Card & Rewards
-              </h3>
-              <ul className="space-y-6">
-                <li>
-                  <a
-                    href="#"
-                    className="text-[#5C5F6A] hover:text-[#0E1422] transition-colors text-sm"
-                  >
-                    The Nordy Club Rewards
+                    Gender Pay Report
                   </a>
                 </li>
                 <li>
@@ -294,23 +280,7 @@ const Footer: React.FC = () => {
                     href="#"
                     className="text-[#5C5F6A] hover:text-[#0E1422] transition-colors text-sm"
                   >
-                    Apply for a Nordstrom Card
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="text-[#5C5F6A] hover:text-[#0E1422] transition-colors text-sm"
-                  >
-                    Pay My Bill
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="text-[#5C5F6A] hover:text-[#0E1422] transition-colors text-sm"
-                  >
-                    Manage My Nordstrom Card
+                    Corporate Responsibility Report
                   </a>
                 </li>
               </ul>
@@ -326,7 +296,7 @@ const Footer: React.FC = () => {
           }}
         >
           <p className="text-[#5C5F6A] text-sm">
-            © 2025 Nordstorm. All rights reserved.
+            © 2025 Primark. All rights reserved.
           </p>
         </div>
       </div>

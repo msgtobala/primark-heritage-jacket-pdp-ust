@@ -20,34 +20,34 @@ const Recommendations: React.FC = () => {
   const products: Product[] = [
     {
       id: '1',
-      name: 'Classic Easy Zipper Tote',
-      price: '$298',
+      name: 'Grey Wide Fit Elastic Lace Trainers',
+      price: '£16 - £19',
       image: recommendation1
     },
     {
       id: '2',
-      name: 'Concertina Phone Bag',
-      price: '$248',
+      name: 'Blue Cotton Geo Polo (3–16yrs)',
+      price: '£12 - £17',
       image: recommendation2
     },
     {
       id: '3',
-      name: 'Wool Cashmere Sweater Coat',
-      price: '$398',
+      name: 'Brown Bear Backpack',
+      price: '£18',
       image: recommendation3
     },
     {
       id: '4',
-      name: 'Single-Origin Cashmere Beanie',
-      price: '$98',
+      name: 'Ted Baker Colourblock Coat',
+      price: '£50 - £57',
       image: recommendation4,
-      colors: ['#D4B5A0', '#2C2C2C', '#E8B4B8'],
-      selectedColor: 'Camel'
+      colors: ['#2764AD', '#000000', '#B7BCB5'],
+      selectedColor: 'Blue'
     },
     {
       id: '5',
-      name: 'Alpaca Wool Cropped Cardigan',
-      price: '$248',
+      name: 'Charcoal Basic Shorts (3–16yrs)',
+      price: '£6 - £11',
       image: recommendation5
     }
   ];
@@ -75,7 +75,7 @@ const Recommendations: React.FC = () => {
                 {/* Color Selection for Beanie - Inside the card */}
                 {product.colors && (
                   <div className="absolute bottom-4 left-4 flex flex-col gap-2">
-                    <span className="text-[#0E1422] text-sm font-medium">{product.selectedColor}</span>
+                    <span className="text-[#0E1422] text-sm font-regular">{product.selectedColor}</span>
                     <div className="flex gap-1">
                       {product.colors.map((color, index) => (
                         <button
@@ -92,18 +92,18 @@ const Recommendations: React.FC = () => {
                 )}
                 
                 {/* Add Button */}
-                <button className="absolute bottom-4 right-4 w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-sm hover:shadow-md transition-shadow duration-200">
+                <button className="absolute bottom-4 bg-transparent right-4 w-8 h-8 flex items-center justify-center transition-shadow duration-200">
                   <span className="material-icons-outlined text-[#0E1422] text-lg">add</span>
                 </button>
               </div>
 
               {/* Product Info */}
               <div className="space-y-2">
-                <h3 className="text-black font-normal text-sm lg:text-base">
+                <h3 className="text-[#000000] font-normal text-sm lg:text-base">
                   {product.name}
                 </h3>
                 
-                <p className="text-[#5C5F6A] text-sm lg:text-base">
+                <p className="text-[#000000] text-sm lg:text-base">
                   {product.price}
                 </p>
               </div>

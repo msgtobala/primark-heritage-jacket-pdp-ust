@@ -9,10 +9,10 @@ const Header: React.FC = () => {
     'Sale',
     'Women',
     'Men',
-    'Beauty',
-    'Shoes',
-    'Accessories',
-    'Kids',
+    'Boys',
+    'Girls',
+    'Furniture',
+    'Baby',
     'Designer',
     'Home',
     'Gifts',
@@ -28,7 +28,7 @@ const Header: React.FC = () => {
             <img 
               src={logo} 
               alt="Nordstrom" 
-              className="h-6 sm:h-7 md:h-8 lg:h-9 w-auto"
+              className="h-6 sm:h-7 md:h-6 lg:h-6 w-auto"
             />
           </div>
 

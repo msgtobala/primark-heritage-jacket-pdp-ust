@@ -18,15 +18,15 @@ const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ items }) => {
           {items.map((item, index) => (
             <li key={index} className="flex items-center">
               {index > 0 && (
-                <span 
-                  className="material-icons-outlined text-[#5C5F6A] mx-1 text-sm"
+                <span
+                  className="material-icons-outlined text-[#0E1422] mx-1 text-sm"
                   aria-hidden="true"
                 >
                   chevron_right
                 </span>
               )}
               {item.isActive ? (
-                <span 
+                <span
                   className="text-[#0E1422] font-regular"
                   aria-current="page"
                 >
@@ -35,7 +35,7 @@ const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ items }) => {
               ) : (
                 <a
                   href={item.href || '#'}
-                  className="text-[#5C5F6A] hover:text-[#0E1422] transition-colors font-regular"
+                  className="text-[#0E1422] hover:text-[#5C5F6A] transition-colors font-regular"
                 >
                   {item.label}
                 </a>

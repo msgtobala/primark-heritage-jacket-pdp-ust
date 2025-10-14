@@ -12,7 +12,7 @@ import Reviews from './components/Reviews';
 import DetailsAndCare from './components/DetailsAndCare';
 import Newsletter from './components/Newsletter';
 import Footer from './components/Footer';
-import NewThreeDSection from './components/NewThreeDSection';
+// import NewThreeDSection from './components/NewThreeDSection';
 
 function App() {
   const breadcrumbItems = [
@@ -23,25 +23,35 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white">
-      <SalesBanner />
-      <Header />
-      <Breadcrumbs items={breadcrumbItems} />
+      {window.innerWidth < 1024 ? (
+        <div className="flex justify-center items-center h-screen w-screen">
+          <p className="text-xl font-normal max-w-[320px] text-center">
+            Website is better viewed in Desktop devices
+          </p>
+        </div>
+      ) : (
+        <>
+          <SalesBanner />
+          <Header />
+          <Breadcrumbs items={breadcrumbItems} />
 
-      {/* Main content area */}
-      <main>
-        <HeroSection />
-        <DetailsAndCare />
-        {/* <ThreeDSection /> */}
-        <NewThreeDSection />
-        <ShowcaseBanner />
-        <DesignInnovation />
-        <DesignBanner />
-        <Reviews />
-        <Recommendations />
-      </main>
+          {/* Main content area */}
+          <main>
+            <HeroSection />
+            <DetailsAndCare />
+            {/* <ThreeDSection /> */}
+            {/* <NewThreeDSection /> */}
+            <ShowcaseBanner />
+            <DesignInnovation />
+            <DesignBanner />
+            <Reviews />
+            <Recommendations />
+          </main>
 
-      <Newsletter />
-      <Footer />
+          <Newsletter />
+          <Footer />
+        </>
+      )}
     </div>
   );
 }

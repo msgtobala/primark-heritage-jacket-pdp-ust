@@ -14,7 +14,7 @@ const Newsletter: React.FC = () => {
     <section
       className="py-16 lg:py-20"
       style={{
-        background: 'linear-gradient(7.89deg, #05080D -18.2%, #474C57 160.3%)',
+        background: 'linear-gradient(7.89deg, #00A0D5 -18.2%, #E1FBFF 160.3%)',
       }}
     >
       <div className="max-w-container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 4k:px-container-x">
@@ -22,7 +22,7 @@ const Newsletter: React.FC = () => {
           {/* Left Content - 50% */}
           <div className="flex-1 lg:w-1/2">
             <h2
-              className="text-white font-medium mb-4"
+              className="text-black font-medium mb-4"
               style={{ fontSize: '32px' }}
             >
               Join Our Newsletter
@@ -30,7 +30,7 @@ const Newsletter: React.FC = () => {
             <p
               className="font-regular"
               style={{
-                color: '#878A92',
+                color: 'black',
                 fontSize: '14px',
               }}
             >
@@ -44,7 +44,7 @@ const Newsletter: React.FC = () => {
           <div className="flex-1 lg:w-1/2 flex justify-start">
             <form
               onSubmit={handleSubmit}
-              className="flex flex-col sm:flex-row gap-4 w-full"
+              className="flex flex-col sm:flex-row gap-4 w-full justify-end"
             >
               <div className="">
                 <input
@@ -55,9 +55,9 @@ const Newsletter: React.FC = () => {
                   required
                   className="w-full sm:w-auto lg:w-[420px] px-4 py-3 bg-transparent focus:outline-none focus:ring-0 transition-colors"
                   style={{
-                    border: '1.33px solid #E6E7E8',
+                    border: '1.33px solid black',
                     borderRadius: '8px',
-                    color: '#878A92',
+                    color: 'black',
                     minWidth: '280px',
                   }}
                 />

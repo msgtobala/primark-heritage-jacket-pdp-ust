@@ -1,11 +1,11 @@
 import React from 'react';
 
 // Import all images
-import toteImage from '../assets/images/innovation/tote.png';
-import backpackImage from '../assets/images/innovation/backpack.png';
-import crossbodyImage from '../assets/images/innovation/crossbody.png';
-import bagImage from '../assets/images/innovation/bag.png';
-import familyImage from '../assets/images/innovation/family-1.png';
+import toteImage from '../assets/images/innovation/cups.png';
+import backpackImage from '../assets/images/innovation/moka-makker.png';
+import crossbodyImage from '../assets/images/innovation/espresso-maker.png';
+import bagImage from '../assets/images/innovation/espresso-maker-red.png';
+import familyImage from '../assets/images/innovation/family.png';
 
 interface Product {
   id: string;
@@ -18,26 +18,26 @@ const DesignInnovation: React.FC = () => {
   const products: Product[] = [
     {
       id: '1',
-      name: 'Large Valetta Tote',
-      price: '$475.00',
+      name: 'Cream Leopard Print Water Bottle',
+      price: '£16',
       image: toteImage
     },
     {
       id: '2',
-      name: 'Celina Backpack',
-      price: '$475.00',
+      name: 'Navy Blue Knitted Polo Shirt (3-16yrs)',
+      price: '£16 - £21',
       image: backpackImage
     },
     {
       id: '3',
-      name: 'Teghan Crossbody',
-      price: '$295.00',
+      name: 'Kids’ Mid Blue Wide-Leg Cargo Jeans',
+      price: '£12 - £14',
       image: crossbodyImage
     },
     {
       id: '4',
-      name: 'Tyler Crossbody Bag',
-      price: '$295.00',
+      name: 'Blue Paw Patrol Elastic Lace Trainers',
+      price: '£28 - £30',
       image: bagImage
     }
   ];
@@ -118,17 +118,17 @@ const DesignInnovation: React.FC = () => {
                     />
                     
                     {/* Add Button */}
-                    <button className="absolute bottom-2 right-2 sm:bottom-3 sm:right-3 md:bottom-4 md:right-4 w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-white rounded-full flex items-center justify-center shadow-sm hover:shadow-md transition-shadow duration-200">
+                    <button className="absolute bottom-2 right-2 sm:bottom-3 sm:right-3 md:bottom-4 md:right-4 w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-transparent flex items-center justify-center transition-shadow duration-200">
                       <span className="material-icons-outlined text-[#0E1422] text-sm sm:text-base md:text-lg">add</span>
                     </button>
                   </div>
 
                   {/* Product Info */}
                   <div className="space-y-1 flex-shrink-0">
-                    <h3 className="text-[#0E1422] font-medium text-xs sm:text-sm md:text-base lg:text-base">
+                    <h3 className="text-[#0E1422] font-medium text-xs sm:text-sm text-sm">
                       {product.name}
                     </h3>
-                    <p className="text-[#5C5F6A] text-xs sm:text-sm md:text-base lg:text-base">
+                    <p className="text-[#5C5F6A] text-xs sm:text-sm text-sm">
                       {product.price}
                     </p>
                   </div>
