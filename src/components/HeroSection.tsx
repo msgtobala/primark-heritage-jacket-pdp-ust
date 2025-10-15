@@ -267,7 +267,7 @@ const HeroSection: React.FC = () => {
 
               {/* Price */}
               <div className="mb-4">
-                <span className="text-xl font-medium text-black">£25</span>
+                <span className="text-xl font-medium text-black">£35</span>
               </div>
 
               {/* Description */}
