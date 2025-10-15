@@ -47,12 +47,12 @@ const ShowcaseBanner: React.FC = () => {
 
             {/* Main Title */}
             <h2 className="text-black font-medium text-3xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-4xl mb-6 leading-tight">
-              Smart, Sturdy, Stylish
+              Effortless Everyday Layer
             </h2>
 
             {/* Description */}
             <p className="text-black/70 text-sm sm:text-base leading-relaxed max-w-sm">
-              A backpack that blends everyday comfort with timeless design.
+              Reliable, versatile, and easy to pair with anything.
             </p>
           </div>
         </div>

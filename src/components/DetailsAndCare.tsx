@@ -28,7 +28,7 @@ const DetailsAndCare: React.FC = () => {
         {/* Section Title */}
         <div className="flex justify-between mb-8 lg:mb-12">
           <h2 className="text-[#0E1422] font-medium text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
-            Details & care
+            Details & Highlights
           </h2>
           <div className="flex items-center gap-4">
             <Button

@@ -10,8 +10,8 @@ import heroNew6 from '../assets/images/hero/hero-new-6.mp4';
 import tumi1 from '../assets/images/hero/you-may-also-like/tumi-1.png';
 import tumi2 from '../assets/images/hero/you-may-also-like/tumi-2.png';
 import tumi3 from '../assets/images/hero/you-may-also-like/tumi-3.png';
-import Black from '../assets/images/hero/variants/variant-1.png';
-import Gold from '../assets/images/hero/variants/variant-2.png';
+// import Black from '../assets/images/hero/variants/variant-1.png';
+// import Gold from '../assets/images/hero/variants/variant-2.png';
 
 interface Product {
   id: string;
@@ -66,37 +66,37 @@ const HeroSection: React.FC = () => {
 
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
   const [quantity, setQuantity] = useState(1);
-  const [selectedColor, setSelectedColor] = useState('Blue Dinosaur Print');
+  // const [selectedColor, setSelectedColor] = useState('Blue Dinosaur Print');
   // const [currentMedia, setSelectedMedia] = useState(
   //   productMedia[selectedImageIndex]
   // );
 
-  const colorOptions = [
-    {
-      name: 'Blue Dinosaur Print',
-      image: Black,
-    },
-    {
-      name: 'Gold',
-      image: Gold,
-    },
-  ];
+  // const colorOptions = [
+  //   {
+  //     name: 'Blue Dinosaur Print',
+  //     image: Black,
+  //   },
+  //   {
+  //     name: 'Gold',
+  //     image: Gold,
+  //   },
+  // ];
 
   const youMightAlsoLikeBase: Product[] = [
     {
       id: '1',
-      name: 'Gap Green Camo Camo Backpack',
-      brand: 'Gap Green Camo Camo Backpack',
-      price: '£30',
-      originalPrice: '£40',
+      name: 'The Stronghold Corduroy Chore Jacket',
+      brand: 'The Stronghold Corduroy Chore Jacket',
+      price: '£45',
+      originalPrice: '£60',
       image: tumi1,
       color: '#E8E8E8',
     },
     {
       id: '2',
-      name: 'Linen Blend Shirt',
-      brand: 'Linen Blend Shirt',
-      originalPrice: '£10 - £15',
+      name: 'Denim Overshirt',
+      brand: 'Denim Overshirt',
+      originalPrice: '£25',
       price: '',
       image: tumi2,
       isSponsored: true,
@@ -104,9 +104,9 @@ const HeroSection: React.FC = () => {
     },
     {
       id: '3',
-      name: 'Adidas Red Youth Prime Backpack',
-      brand: 'Adidas Red Youth Prime Backpack',
-      originalPrice: '£18',
+      name: 'The stronghold Herringbone Canvas Jacket',
+      brand: 'The stronghold Herringbone Canvas Jacket',
+      originalPrice: '£20',
       price: '',
       image: tumi3,
       color: '#EBEEF0',
@@ -259,7 +259,7 @@ const HeroSection: React.FC = () => {
 
               {/* Product Title */}
               <h1 className="text-lg md:text-xl font-medium text-black mb-2 leading-tight">
-                Blue Dinosaur Print Backpack
+              Heritage Canvas Jacket – Sand
               </h1>
 
               {/* Brand */}
@@ -267,21 +267,20 @@ const HeroSection: React.FC = () => {
 
               {/* Price */}
               <div className="mb-4">
-                <span className="text-xl font-medium text-black">£20</span>
+                <span className="text-xl font-medium text-black">£25</span>
               </div>
 
               {/* Description */}
               <p className="text-[#777777] text-md leading-relaxed mb-4 font-normal">
-                A playful, eco-friendly kids’ backpack made from recycled
-                polyester, compact and perfect for daily adventures.
+              A timeless workwear-inspired jacket made from durable cotton canvas. Designed for everyday versatility — easy to layer, hard to wear out.
               </p>
 
-              <div className="my-4">
+              {/* <div className="my-4">
                 <hr className="border-[#E6E7E8] border-0.5" />
-              </div>
+              </div> */}
 
               {/* Color Selection */}
-              <div className="mb-4 flex justify-between items-center">
+              {/* <div className="mb-4 flex justify-between items-center">
                 <h3 className="text-sm font-normal text-black mb-2">
                   {selectedColor}
                 </h3>
@@ -306,11 +305,11 @@ const HeroSection: React.FC = () => {
                     </button>
                   ))}
                 </div>
-              </div>
+              </div> */}
 
-              <div className="mb-8">
+              {/* <div className="mb-8">
                 <hr className="border-[#E6E7E8] border-0.5" />
-              </div>
+              </div> */}
 
               {/* Quantity and Add to Cart */}
               <div className="flex items-center gap-3 mb-12">

@@ -20,34 +20,33 @@ const Recommendations: React.FC = () => {
   const products: Product[] = [
     {
       id: '1',
-      name: 'Grey Wide Fit Elastic Lace Trainers',
-      price: '£16 - £19',
+      name: 'The Stronghold Padded Canvas Jacket',
+      price: '£40',
       image: recommendation1
     },
     {
       id: '2',
-      name: 'Blue Cotton Geo Polo (3–16yrs)',
-      price: '£12 - £17',
+      name: 'Heritage Canvas Jacket',
+      price: '£35',
       image: recommendation2
     },
     {
       id: '3',
-      name: 'Brown Bear Backpack',
-      price: '£18',
+      name: 'Button-Up Canvas Jacket',
+      price: '£30',
       image: recommendation3
     },
     {
       id: '4',
-      name: 'Ted Baker Colourblock Coat',
-      price: '£50 - £57',
+      name: 'The Stronghold Zip-Up Canvas Jacket',
+      price: '£35',
       image: recommendation4,
-      colors: ['#2764AD', '#000000', '#B7BCB5'],
       selectedColor: 'Blue'
     },
     {
       id: '5',
-      name: 'Charcoal Basic Shorts (3–16yrs)',
-      price: '£6 - £11',
+      name: 'Patch Pocket Canvas Jacket',
+      price: '£35',
       image: recommendation5
     }
   ];

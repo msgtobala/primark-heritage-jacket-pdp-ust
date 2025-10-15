@@ -18,7 +18,7 @@ const DesignBanner: React.FC = () => {
         >
           <div className="max-w-md">
             {/* Tag */}
-            <div className="mb-6">
+            {/* <div className="mb-6">
               <span
                 className="text-white text-sm font-regular"
                 style={{
@@ -33,17 +33,16 @@ const DesignBanner: React.FC = () => {
               >
                 Everyday Comfort
               </span>
-            </div>
+            </div> */}
 
             {/* Main Title */}
             <h2 className="text-white font-regular text-2xl sm:text-3xl md:text-4xl lg:text-3xl xl:text-3xl mb-6 leading-tight">
-              Ready for Every Journey
+              Where Craft Meets Comfort
             </h2>
 
             {/* Description */}
             <p className="text-white/70 text-sm sm:text-base md:text-lg leading-relaxed">
-              From carrying books in the classroom to toys at the playground,
-              it’s crafted for durability and comfort all day long
+              Inspired by classic workwear, every seam and pocket is designed for resilience, function, and everyday ease.
             </p>
           </div>
         </div>

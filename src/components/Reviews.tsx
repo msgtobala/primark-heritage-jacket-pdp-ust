@@ -19,28 +19,28 @@ const Reviews: React.FC = () => {
   const reviews: Review[] = [
     {
       id: '1',
-      name: 'AmyT',
+      name: 'Amy T',
       timeAgo: '2 WEEKS AGO',
       rating: 4,
       comment:
-        'Perfect birthday present for my nephew. He is using it every day as his school bag.',
+        'Bought this for my husband and he loves it. Great fit, sturdy feel, and the sand colour goes with everything.',
       images: [review1],
     },
     {
       id: '2',
-      name: 'MichaelR',
+      name: 'Michael R',
       timeAgo: '2 WEEKS AGO',
       rating: 4,
-      comment: 'Perfect everyday wear for kids. Durable, stylish, and easy to wash. Highly recommend for parents looking for affordable quality.',
+      comment: 'Solid everyday jacket. Feels premium for the price. The fabric is thick but still easy to move in.',
       images: [review2],
     },
     {
       id: '3',
-      name: 'JustinS',
+      name: 'Justin S',
       timeAgo: '2 WEEKS AGO',
       rating: 4,
       comment:
-        'Lovely quality fabric, feels soft and comfortable. My son absolutely loves the dinosaur print. Washes well and keeps its shape. Very happy with this purchase!',
+        'Excellent quality and perfect for layering. I’ve worn it almost daily and it’s holding up really well',
       images: [review3, review4],
     },
     {
@@ -49,7 +49,7 @@ const Reviews: React.FC = () => {
       timeAgo: '4 WEEKS AGO',
       rating: 4,
       comment:
-        'Bought this for my nephew’s birthday and he was thrilled! Bright colours and fun design, he wears it all the time.',
+        'Love the classic look. The collar detail and stitching make it feel much more expensive than it is.',
       images: [],
     },
   ];
@@ -129,16 +129,16 @@ const Reviews: React.FC = () => {
                   </div>
                   {review.images.length > 0 && (
                     <div className="flex gap-2 flex-shrink-0">
-                      {review.images.map((image, index) => (
+                      {review.images.map((_, index) => (
                         <div
                           key={index}
                           className="w-16 h-16 bg-gray-100 rounded-lg overflow-hidden"
                         >
-                          <img
+                          {/* <img
                             src={image}
                             alt={`Review image ${index + 1}`}
                             className="w-full h-full object-cover"
-                          />
+                          /> */}
                         </div>
                       ))}
                     </div>
@@ -238,7 +238,7 @@ const Reviews: React.FC = () => {
                       </div>
 
                       {/* Review Images */}
-                      {review.images.length > 0 && (
+                      {/* {review.images.length > 0 && (
                         <div className="flex gap-2 flex-shrink-0">
                           {review.images.map((image, index) => (
                             <div
@@ -253,7 +253,7 @@ const Reviews: React.FC = () => {
                             </div>
                           ))}
                         </div>
-                      )}
+                      )} */}
                     </div>
                   </div>
                 ))}
