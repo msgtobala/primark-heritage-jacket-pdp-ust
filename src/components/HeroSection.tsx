@@ -104,8 +104,8 @@ const HeroSection: React.FC = () => {
     },
     {
       id: '3',
-      name: 'The stronghold Herringbone Canvas Jacket',
-      brand: 'The stronghold Herringbone Canvas Jacket',
+      name: 'The Stronghold Herringbone Canvas Jacket',
+      brand: 'The Stronghold Herringbone Canvas Jacket',
       originalPrice: '£20',
       price: '',
       image: tumi3,
@@ -162,7 +162,7 @@ const HeroSection: React.FC = () => {
                   <img
                     src={currentMedia.src}
                     alt={currentMedia.alt}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover object-top"
                     // className="w-full h-full"
                   />
                 )}

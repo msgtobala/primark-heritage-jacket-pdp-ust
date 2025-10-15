@@ -18,8 +18,8 @@ const DesignInnovation: React.FC = () => {
   const products: Product[] = [
     {
       id: '1',
-      name: 'High-Waisted Relaxed Fit Jeans',
-      price: '£14',
+      name: 'Utility Cargo Pants',
+      price: '£30',
       image: toteImage
     },
     {

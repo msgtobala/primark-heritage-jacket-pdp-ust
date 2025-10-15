@@ -10,7 +10,7 @@ const Header: React.FC = () => {
     'MEN',
     'HOLIDAY',
     'KIDS',
-    'Furniture',
+    'FURNITURE',
     'HALLOWEEN',
     'HOME',
     'BEAUTY',
