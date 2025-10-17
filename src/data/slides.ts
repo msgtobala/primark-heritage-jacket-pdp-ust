@@ -16,7 +16,7 @@ export interface CarouselSlide {
 export const slides: CarouselSlide[] = [
   {
     id: 1,
-    title: 'Everyday Durability',
+    title: "Everyday Durability",
     subtitle: 'Built to last. Crafted from sturdy cotton canvas with reinforced seams, this jacket keeps its shape while softening over time – a dependable layer that works as hard as you do.',
     video: '/baby-high-chair.mp4',
     image: detail1,

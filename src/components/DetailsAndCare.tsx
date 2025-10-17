@@ -69,7 +69,7 @@ const DetailsAndCare: React.FC = () => {
                   className={`flex h-[400px] md:h-[500px] lg:h-[500px] xl:h-[500px] rounded-[20px] overflow-hidden ${slide.backgroundColor} shadow-[0_4px_20px_rgba(0,0,0,0.08)]`}
                 >
                   {/* Left side with image */}
-                  <div className="flex-[3] overflow-hidden">
+                  <div className="flex-[2] overflow-hidden">
                     {slide.isImage ? (
                       <img 
                         src={slide.image} 
